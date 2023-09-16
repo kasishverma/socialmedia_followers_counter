@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>YouTube Subscriber Count</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+	<div class="container">
+		<h1>YouTube Subscriber Count</h1>
+		<div class="form-group">
+			<label for="channel-name">Enter a YouTube channel name:</label>
+			<input type="text" class="form-control" id="channel-name">
+		</div>
+		<div class="form-group">
+			<label for="similar-channels">Similar channels:</label>
+			<select class="form-control" id="similar-channels">
+				<option value="">--Select a channel--</option>
+			</select>
+		</div>
+		<button type="button" class="btn btn-primary" onclick="getSubscriberCount()">Get Subscriber Count</button>
+		<p id="subscriber-count"></p>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<script src="ytscript.js"></script>
+</body>
+</html>
